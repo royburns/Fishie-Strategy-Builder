@@ -36,6 +36,7 @@ namespace Forex_Strategy_Builder
             LayoutColors.InitColorSchemes();
             Data.InitMarketStatistic();
 
+            Data.Strategy.Symbol = "#CMCM";
             Data.InstrProperties = Instruments.InstrumentList[Data.Strategy.Symbol].Clone();
 
             Application.Run(new Actions());

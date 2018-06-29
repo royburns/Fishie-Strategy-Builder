@@ -54,7 +54,7 @@ namespace Forex_Strategy_Builder
             {
                 const string spacePattern  = @"[\t ;,]";
                 const string datePattern   = @"\d{1,4}[\./-]\d{1,4}[\./-]\d{1,4}";
-                const string timePattern   = @"\d{2}(:\d{2}){1,2}";
+                //const string timePattern   = @"\d{2}(:\d{2}){1,2}";
                 const string pricePattern  = @"\d+([\.,]\d+)?";
                 const string volumePattern = @"\d{1,10}";
 
@@ -63,7 +63,7 @@ namespace Forex_Strategy_Builder
                     spacePattern + "*" +  // Zero or more white spaces
                     datePattern +        // Valid date pattern
                     spacePattern + "+" +  // One or more spaces
-                    timePattern +        // Valid time pattern
+                    //timePattern +        // Valid time pattern
                     spacePattern + "+" +  // One or more spaces
                     pricePattern +        // Price
                     spacePattern + "+" +  // One or more spaces
